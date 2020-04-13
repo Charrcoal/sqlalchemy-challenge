@@ -9,7 +9,8 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # Database Setup
-engine = create_engine("sqlite:////Users/shui/Desktop/BSC/UT-TOR-DATA-PT-01-2020-U-C-Master/10-Advanced-Data-Storage-and-Retrieval/Homework/sqlalchemy-challenge/Resources/hawaii.sqlite")
+#engine = create_engine("sqlite:////Users/shui/Desktop/BSC/UT-TOR-DATA-PT-01-2020-U-C-Master/10-Advanced-Data-Storage-and-Retrieval/Homework/sqlalchemy-challenge/Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
